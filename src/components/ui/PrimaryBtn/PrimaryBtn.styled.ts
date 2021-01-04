@@ -8,7 +8,7 @@ interface ButtonProps {
 export const Button = styled.button<ButtonProps>`
   align-items: center;
   background: ${({ theme: { colors }, isDisabled }) =>
-    isDisabled ? colors.lightGray : colors.aquaBlue};
+    isDisabled ? colors.gray2 : colors.aquaBlue};
   border-radius: 30px;
   border: 0;
   color: ${({ theme: { colors } }) => colors.white};
