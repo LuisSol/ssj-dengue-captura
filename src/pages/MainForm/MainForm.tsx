@@ -8,6 +8,7 @@ import { Container } from "./MainForm.styled";
 import IniciarCaptura from "../../components/IniciarCaptura";
 import Sociodemograficas from "../../components/Sociodemograficas";
 import Footer from "../../components/ui/Footer";
+import Servicios from "../../components/Servicios";
 
 const MainForm: FC<RouteComponentProps> = ({ match }) => {
   return (
@@ -19,6 +20,7 @@ const MainForm: FC<RouteComponentProps> = ({ match }) => {
           exact
           component={Sociodemograficas}
         />
+        <Route path={`${match.url}/servicios`} exact component={Servicios} />
       </Switch>
       <Footer />
     </Container>

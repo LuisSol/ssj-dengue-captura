@@ -14,6 +14,7 @@ type State = {
   fechaLevantamiento: string;
   encuestador: string;
   nombre: string;
+  idEncuestado: string;
   edad: string;
   sexo: string;
   religion: string;
@@ -27,7 +28,6 @@ type State = {
   idIntegrante3: string;
   idIntegrante4: string;
   idIntegrante5: string;
-  idIntegrante6: string;
   idIntegrante7: string;
   idIntegrante8: string;
   idIntegrante9: string;
@@ -51,10 +51,8 @@ type State = {
   escolaridadIntegrante3: string;
   escolaridadIntegrante4: string;
   escolaridadIntegrante5: string;
-  escolaridadIntegrante6: string;
   escolaridadIntegrante7: string;
   escolaridadIntegrante8: string;
-  escolaridadIntegrante9: string;
   escolaridadIntegrante10: string;
   escolaridadIntegrante11: string;
   escolaridadIntegrante12: string;
@@ -68,6 +66,7 @@ const defaultFormData: State = {
   fechaLevantamiento: "",
   encuestador: "",
   nombre: "",
+  idEncuestado: "1",
   edad: "",
   sexo: "1",
   religion: "1",
@@ -76,19 +75,18 @@ const defaultFormData: State = {
   ocupacion: "",
   domicilio: "",
   numIntegrantes: "1",
-  idIntegrante1: "1",
+  idIntegrante1: "",
   idIntegrante2: "",
   idIntegrante3: "",
   idIntegrante4: "",
   idIntegrante5: "",
-  idIntegrante6: "",
   idIntegrante7: "",
   idIntegrante8: "",
   idIntegrante9: "",
   idIntegrante10: "",
   idIntegrante11: "",
   idIntegrante12: "",
-  edadIntegrante1: "10",
+  edadIntegrante1: "",
   edadIntegrante2: "",
   edadIntegrante3: "",
   edadIntegrante4: "",
@@ -100,15 +98,13 @@ const defaultFormData: State = {
   edadIntegrante10: "",
   edadIntegrante11: "",
   edadIntegrante12: "",
-  escolaridadIntegrante1: "1",
+  escolaridadIntegrante1: "",
   escolaridadIntegrante2: "",
   escolaridadIntegrante3: "",
   escolaridadIntegrante4: "",
   escolaridadIntegrante5: "",
-  escolaridadIntegrante6: "",
   escolaridadIntegrante7: "",
   escolaridadIntegrante8: "",
-  escolaridadIntegrante9: "",
   escolaridadIntegrante10: "",
   escolaridadIntegrante11: "",
   escolaridadIntegrante12: "",
