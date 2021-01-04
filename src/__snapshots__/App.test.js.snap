@@ -2,8 +2,54 @@
 
 exports[`renders app without crashing 1`] = `
 <div>
-  <div>
-    Hello
-  </div>
+  <main
+    class="sc-bdfBwQ jxFRdx"
+  >
+    <section
+      class="sc-gsTCUz jsJSrw"
+    >
+      <div
+        class="sc-dlfnbm kRCrbd"
+      >
+        <div
+          class="sc-hKgILt jcqvaS"
+        >
+          <svg>
+            JaliscoLogo.svg
+          </svg>
+        </div>
+        <h1
+          class="sc-eCssSg eyaFWe"
+        >
+          Sistema de captura.
+          <br />
+          Encuestas dengue
+        </h1>
+        <nav
+          class="sc-gKsewC bSRgLv"
+        >
+          <div
+            class="sc-iBPRYJ hJGmTx"
+          >
+            <svg>
+              home.svg
+            </svg>
+          </div>
+          |
+          <div
+            class="sc-fubCfw dVluc"
+          >
+            Encuestas
+          </div>
+        </nav>
+      </div>
+      <div
+        class="sc-jSgupP blmpMH"
+      />
+    </section>
+    <div>
+      HEllo
+    </div>
+  </main>
 </div>
 `;
