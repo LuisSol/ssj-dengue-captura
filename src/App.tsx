@@ -7,10 +7,15 @@ import { nomalTheme } from "./styles/theme";
 // components
 import AppRouter from "./routers/AppRouter";
 
+// Context
+import { MasterFormProvider } from "./Contexts/MainForm";
+
 function App() {
   return (
     <ThemeProvider theme={nomalTheme}>
-      <AppRouter />
+      <MasterFormProvider>
+        <AppRouter />
+      </MasterFormProvider>
     </ThemeProvider>
   );
 }

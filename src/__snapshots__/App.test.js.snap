@@ -3,7 +3,7 @@
 exports[`renders app without crashing 1`] = `
 <div>
   <main
-    class="sc-bdfBwQ jxFRdx"
+    class="sc-bdfBwQ fhAHCl"
   >
     <section
       class="sc-gsTCUz jsJSrw"
@@ -70,18 +70,6 @@ exports[`renders app without crashing 1`] = `
             >
               <svg>
                 NewTrans.svg
-              </svg>
-            </div>
-          </button>
-          <button
-            class="sc-kstrdz jlldQO"
-          >
-            Continuar encuesta
-            <div
-              class="sc-crrsfI jIJTqt"
-            >
-              <svg>
-                ContTrans.svg
               </svg>
             </div>
           </button>
