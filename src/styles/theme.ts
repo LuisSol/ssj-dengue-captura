@@ -6,6 +6,7 @@ declare module "styled-components" {
       black: "#000000";
       white: "#FFFFFF";
       aquaBlue: "#00716e";
+      darkAquaBlue: "#135654";
       blueGray: "#586771";
       gray: "#414042";
       lightGray: "#f2f2f2";
@@ -43,6 +44,7 @@ export const nomalTheme: DefaultTheme = {
     black: "#000000",
     white: "#FFFFFF",
     aquaBlue: "#00716e",
+    darkAquaBlue: "#135654",
     blueGray: "#586771",
     gray: "#414042",
     lightGray: "#f2f2f2",

@@ -47,9 +47,68 @@ exports[`renders app without crashing 1`] = `
         class="sc-jSgupP blmpMH"
       />
     </section>
-    <div>
-      HEllo
-    </div>
+    <section
+      class="sc-pFZIQ bKDmeh"
+    >
+      <section
+        class="sc-jrAGrp kVmaIA"
+      >
+        <h1
+          class="sc-kEjbxe diYCuS"
+        >
+          Inicio
+        </h1>
+        <section
+          class="sc-iqHYGH cKJtCJ"
+        >
+          <button
+            class="sc-kstrdz jlldQO"
+          >
+            Capturar encuesta
+            <div
+              class="sc-crrsfI jIJTqt"
+            >
+              <svg>
+                NewTrans.svg
+              </svg>
+            </div>
+          </button>
+          <button
+            class="sc-kstrdz jlldQO"
+          >
+            Continuar encuesta
+            <div
+              class="sc-crrsfI jIJTqt"
+            >
+              <svg>
+                ContTrans.svg
+              </svg>
+            </div>
+          </button>
+          <button
+            class="sc-kstrdz jlldQO"
+          >
+            Exportar encuestas
+            <div
+              class="sc-crrsfI jIJTqt"
+            >
+              <svg>
+                xls.svg
+              </svg>
+            </div>
+          </button>
+        </section>
+      </section>
+      <footer
+        class="sc-dQppl nOcRQ"
+      >
+        <small
+          class="sc-bqyKva"
+        >
+          Creado y diseñado por LESN. 2021 Todos los derechos reservados.
+        </small>
+      </footer>
+    </section>
   </main>
 </div>
 `;
