@@ -68,7 +68,7 @@ const IniciarCaptura: FC<RouteComponentProps> = ({ match }) => {
         </label>
         <ContinueBtn
           style={{ margin: "60px auto" }}
-          disabled={!folio || !fechaLevantamiento || !zona || !encuestador}
+          disabled={false}
           onClick={handleContinue}
         >
           Siguiente

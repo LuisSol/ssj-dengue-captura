@@ -1552,17 +1552,7 @@ const Sociodemograficas: FC<RouteComponentProps> = ({ match }) => {
 
         <ContinueBtn
           style={{ margin: "60px auto" }}
-          disabled={
-            !nombre ||
-            !edad ||
-            !idEncuestado ||
-            !sexo ||
-            !religion ||
-            !estadoCivil ||
-            !escolaridad ||
-            !ocupacion ||
-            !domicilio
-          }
+          disabled={false}
           onClick={handleContinue}
         >
           Siguiente
