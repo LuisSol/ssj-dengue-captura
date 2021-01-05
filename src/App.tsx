@@ -1,5 +1,8 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
+import { ToastContainer } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 
 // styles
 import { nomalTheme } from "./styles/theme";
@@ -16,6 +19,7 @@ function App() {
       <MasterFormProvider>
         <AppRouter />
       </MasterFormProvider>
+      <ToastContainer />
     </ThemeProvider>
   );
 }

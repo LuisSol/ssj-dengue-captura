@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { /*useHistory,*/ RouteComponentProps } from "react-router-dom";
+import { useHistory, RouteComponentProps } from "react-router-dom";
 
 // styles
 import {
@@ -19,8 +19,13 @@ import ContinueBtn from "../ui/PrimaryBtn";
 import Selector from "../ui/Selector";
 import StyledInput from "../ui/InputTxt";
 
+// utils
+import { flasher } from "../../utils/Flasher";
+import { db } from "../../utils/Firebase";
+
 const Estrategias: FC<RouteComponentProps> = ({ match }) => {
-  //const history = useHistory();
+  const history = useHistory();
+  const form = useMasterForm();
   const {
     conoceEstrategias,
     detalleEstrategias,
@@ -68,14 +73,22 @@ const Estrategias: FC<RouteComponentProps> = ({ match }) => {
     detalleImportantesApp,
     medioMensajes,
     detalleMedio,
-  } = useMasterForm();
+  } = form;
   const formDispatcher = useMasterFormDistach();
 
-  const handleContinue = (
+  const handleContinue = async (
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     e.preventDefault();
-    // TODO SAVE TO FIREBASE
+    try {
+      db.collection("2020").doc(form.folio).set(form);
+      flasher("Encuesta guardada satisfactoriamente", "success");
+      formDispatcher({ type: "RESET_FORM" });
+      history.push("/");
+    } catch (error) {
+      console.error(error);
+      flasher("Algo salió mal intentalo de nuevo", "error");
+    }
   };
 
   const handleSelector = (value: string, field: string) => (

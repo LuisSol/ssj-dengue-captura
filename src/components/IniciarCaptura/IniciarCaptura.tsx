@@ -25,7 +25,6 @@ const IniciarCaptura: FC<RouteComponentProps> = ({ match }) => {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.value);
     formDispatcher({
       type: "SET_VALUE",
       field: e.target.id,
