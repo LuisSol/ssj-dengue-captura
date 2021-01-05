@@ -173,6 +173,53 @@ type State = {
   opcionAseoIntegrante10: string;
   opcionAseoIntegrante11: string;
   opcionAseoIntegrante12: string;
+  // conocimiento
+  conoceEstrategias: string;
+  detalleEstrategias: string;
+  conoceEnfermedades: string;
+  detalleEnfermedades: string;
+  conoceSaludable: string;
+  conoceDengue: string;
+  conoceTransmisionDengue: string;
+  detalleTransmisionDengue: string;
+  conoceRepMosquitos: string;
+  esconditeMosquitos: string;
+  denguePrevenir: string;
+  detallePrevenirDengue: string;
+  conoceDescacha: string;
+  conoceProgramaPatio: string;
+  detallePatioLimpio: string;
+  conoceEstrategiasDengue: string;
+  comoSupoEstrategiasDengue: string;
+  esClaroMensaje: string;
+  queTransmiteMensaje: string;
+  queSignificaMensaje: string;
+  imagenAtencion: string;
+  porqueImagen: string;
+  significaLava: string;
+  significaTapa: string;
+  significaVoltea: string;
+  significaTira: string;
+  conoceTomas: string;
+  seIdentifica: string;
+  algunMiembroIdentifica: string;
+  porqueIdentifica: string;
+  mensajeInteres: string;
+  haHechoActividad: string;
+  detalleActividad: string;
+  conoceAguasDengue: string;
+  comoConocioAguasDengue: string;
+  queSignificaAguasDengue: string;
+  conoceAppDengue: string;
+  comoConoceApp: string;
+  utilizaApp: string;
+  utilApp: string;
+  porqueUtilApp: string;
+  algunMiembroUtilizaApp: string;
+  importantesApp: string;
+  detalleImportantesApp: string;
+  medioMensajes: string;
+  detalleMedio: string;
 };
 
 const defaultFormData: State = {
@@ -337,6 +384,52 @@ const defaultFormData: State = {
   opcionAseoIntegrante10: "",
   opcionAseoIntegrante11: "",
   opcionAseoIntegrante12: "",
+  conoceEstrategias: "",
+  detalleEstrategias: "",
+  conoceEnfermedades: "",
+  detalleEnfermedades: "",
+  conoceSaludable: "",
+  conoceDengue: "",
+  conoceTransmisionDengue: "",
+  detalleTransmisionDengue: "",
+  conoceRepMosquitos: "",
+  esconditeMosquitos: "",
+  denguePrevenir: "",
+  detallePrevenirDengue: "",
+  conoceDescacha: "",
+  conoceProgramaPatio: "",
+  detallePatioLimpio: "",
+  conoceEstrategiasDengue: "",
+  comoSupoEstrategiasDengue: "",
+  esClaroMensaje: "",
+  queTransmiteMensaje: "",
+  queSignificaMensaje: "",
+  imagenAtencion: "",
+  porqueImagen: "",
+  significaLava: "",
+  significaTapa: "",
+  significaVoltea: "",
+  significaTira: "",
+  conoceTomas: "",
+  seIdentifica: "",
+  algunMiembroIdentifica: "",
+  porqueIdentifica: "",
+  mensajeInteres: "",
+  haHechoActividad: "",
+  detalleActividad: "",
+  conoceAguasDengue: "",
+  comoConocioAguasDengue: "",
+  queSignificaAguasDengue: "",
+  conoceAppDengue: "",
+  comoConoceApp: "",
+  utilizaApp: "",
+  utilApp: "",
+  porqueUtilApp: "",
+  algunMiembroUtilizaApp: "",
+  importantesApp: "",
+  detalleImportantesApp: "",
+  medioMensajes: "",
+  detalleMedio: "",
 };
 
 const masterFormReducer = (state: State = defaultFormData, action: Action) => {

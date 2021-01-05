@@ -32,7 +32,7 @@ const TextDataInput: FC<TextDataInputProps> = ({
           onChange={onChange}
           onBlur={onBlur}
           id={id}
-          maxLength={50}
+          maxLength={400}
           invalid={false}
           disabled={disabled}
         />
