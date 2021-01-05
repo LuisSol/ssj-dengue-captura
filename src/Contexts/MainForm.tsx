@@ -9,7 +9,7 @@ type Dispatch = (action: Action) => void;
 type MasterFormProviderProps = { children: ReactNode };
 type State = {
   // init
-  enProceso: boolean;
+  enProceso: boolean | null;
   folio: string;
   zona: string;
   fechaLevantamiento: string;

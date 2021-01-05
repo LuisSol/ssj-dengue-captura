@@ -98,5 +98,8 @@ exports[`renders app without crashing 1`] = `
       </footer>
     </section>
   </main>
+  <div
+    class="Toastify"
+  />
 </div>
 `;

@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import { useHistory } from "react-router-dom";
 
 // styles
 import {
@@ -17,6 +18,15 @@ import { ReactComponent as JaliscoLogo } from "../../assets/icons/JaliscoLogo.sv
 import { ReactComponent as HomeLogo } from "../../assets/icons/home.svg";
 
 const MainBanner: FC = () => {
+  const history = useHistory();
+
+  const handleGoTo = (path: string) => (
+    e: React.MouseEvent<HTMLDivElement, MouseEvent>
+  ) => {
+    e.preventDefault();
+    history.push(path);
+  };
+
   return (
     <Container>
       <BannerHero>
@@ -29,10 +39,13 @@ const MainBanner: FC = () => {
           Encuestas dengue
         </Title>
         <NavBar>
-          <HomeLogoContainer>
+          <HomeLogoContainer onClick={handleGoTo("/")}>
             <HomeLogo />
           </HomeLogoContainer>
-          |<NavItemContainer>Encuestas</NavItemContainer>
+          |
+          <NavItemContainer onClick={handleGoTo("/encuestas")}>
+            Encuestas
+          </NavItemContainer>
         </NavBar>
       </BannerHero>
       <BottomBar />
