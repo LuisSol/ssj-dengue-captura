@@ -8,7 +8,7 @@ import {
   FieldsContainer,
   SelectorContainer,
   OptionsWrapper,
-} from "./Servicios.styled";
+} from "./Actividades.styled";
 
 // contexts
 import { useMasterFormDistach, useMasterForm } from "../../Contexts/MainForm";
@@ -19,7 +19,7 @@ import ContinueBtn from "../ui/PrimaryBtn";
 import Selector from "../ui/Selector";
 import NumInput from "../ui/InputNum";
 
-const Servicios: FC<RouteComponentProps> = ({ match }) => {
+const Actividades: FC<RouteComponentProps> = ({ match }) => {
   const history = useHistory();
   const {
     aguaPotable,
@@ -86,7 +86,7 @@ const Servicios: FC<RouteComponentProps> = ({ match }) => {
   return (
     <Content>
       <BackBtn />
-      <Title>Servicios</Title>
+      <Title>Actividades en casa</Title>
       <FieldsContainer>
         <SelectorContainer>
           <p>Agua Potable</p>
@@ -396,13 +396,13 @@ const Servicios: FC<RouteComponentProps> = ({ match }) => {
           <p> Celular (Teléfono inteligente/smartphone)</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante2")}
+              onClick={handleSelector("Si", "celularIntegrante1")}
               selected={celularIntegrante2 === "Si"}
             >
               Si
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante2")}
+              onClick={handleSelector("No", "celularIntegrante1")}
               selected={celularIntegrante2 === "No"}
             >
               No
@@ -414,13 +414,13 @@ const Servicios: FC<RouteComponentProps> = ({ match }) => {
           <p> Celular (Teléfono inteligente/smartphone)</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante3")}
+              onClick={handleSelector("Si", "celularIntegrante1")}
               selected={celularIntegrante3 === "Si"}
             >
               Si
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante3")}
+              onClick={handleSelector("No", "celularIntegrante1")}
               selected={celularIntegrante3 === "No"}
             >
               No
@@ -432,13 +432,13 @@ const Servicios: FC<RouteComponentProps> = ({ match }) => {
           <p> Celular (Teléfono inteligente/smartphone)</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante4")}
+              onClick={handleSelector("Si", "celularIntegrante1")}
               selected={celularIntegrante4 === "Si"}
             >
               Si
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante4")}
+              onClick={handleSelector("No", "celularIntegrante1")}
               selected={celularIntegrante4 === "No"}
             >
               No
@@ -450,13 +450,13 @@ const Servicios: FC<RouteComponentProps> = ({ match }) => {
           <p> Celular (Teléfono inteligente/smartphone)</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante5")}
+              onClick={handleSelector("Si", "celularIntegrante1")}
               selected={celularIntegrante5 === "Si"}
             >
               Si
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante5")}
+              onClick={handleSelector("No", "celularIntegrante1")}
               selected={celularIntegrante5 === "No"}
             >
               No
@@ -468,13 +468,13 @@ const Servicios: FC<RouteComponentProps> = ({ match }) => {
           <p> Celular (Teléfono inteligente/smartphone)</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante6")}
+              onClick={handleSelector("Si", "celularIntegrante1")}
               selected={celularIntegrante6 === "Si"}
             >
               Si
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante6")}
+              onClick={handleSelector("No", "celularIntegrante1")}
               selected={celularIntegrante6 === "No"}
             >
               No
@@ -486,13 +486,13 @@ const Servicios: FC<RouteComponentProps> = ({ match }) => {
           <p> Celular (Teléfono inteligente/smartphone)</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante7")}
+              onClick={handleSelector("Si", "celularIntegrante1")}
               selected={celularIntegrante7 === "Si"}
             >
               Si
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante7")}
+              onClick={handleSelector("No", "celularIntegrante1")}
               selected={celularIntegrante7 === "No"}
             >
               No
@@ -504,13 +504,13 @@ const Servicios: FC<RouteComponentProps> = ({ match }) => {
           <p> Celular (Teléfono inteligente/smartphone)</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante8")}
+              onClick={handleSelector("Si", "celularIntegrante1")}
               selected={celularIntegrante8 === "Si"}
             >
               Si
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante8")}
+              onClick={handleSelector("No", "celularIntegrante1")}
               selected={celularIntegrante8 === "No"}
             >
               No
@@ -522,13 +522,13 @@ const Servicios: FC<RouteComponentProps> = ({ match }) => {
           <p> Celular (Teléfono inteligente/smartphone)</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante9")}
+              onClick={handleSelector("Si", "celularIntegrante1")}
               selected={celularIntegrante9 === "Si"}
             >
               Si
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante9")}
+              onClick={handleSelector("No", "celularIntegrante1")}
               selected={celularIntegrante9 === "No"}
             >
               No
@@ -540,13 +540,13 @@ const Servicios: FC<RouteComponentProps> = ({ match }) => {
           <p> Celular (Teléfono inteligente/smartphone)</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante10")}
+              onClick={handleSelector("Si", "celularIntegrante1")}
               selected={celularIntegrante10 === "Si"}
             >
               Si
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante10")}
+              onClick={handleSelector("No", "celularIntegrante1")}
               selected={celularIntegrante10 === "No"}
             >
               No
@@ -558,13 +558,13 @@ const Servicios: FC<RouteComponentProps> = ({ match }) => {
           <p> Celular (Teléfono inteligente/smartphone)</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante11")}
+              onClick={handleSelector("Si", "celularIntegrante1")}
               selected={celularIntegrante11 === "Si"}
             >
               Si
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante11")}
+              onClick={handleSelector("No", "celularIntegrante1")}
               selected={celularIntegrante11 === "No"}
             >
               No
@@ -576,13 +576,13 @@ const Servicios: FC<RouteComponentProps> = ({ match }) => {
           <p> Celular (Teléfono inteligente/smartphone)</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante12")}
+              onClick={handleSelector("Si", "celularIntegrante1")}
               selected={celularIntegrante12 === "Si"}
             >
               Si
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante12")}
+              onClick={handleSelector("No", "celularIntegrante1")}
               selected={celularIntegrante12 === "No"}
             >
               No
@@ -617,4 +617,4 @@ const Servicios: FC<RouteComponentProps> = ({ match }) => {
   );
 };
 
-export default Servicios;
+export default Actividades;
