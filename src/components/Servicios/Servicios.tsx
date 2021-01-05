@@ -592,22 +592,7 @@ const Servicios: FC<RouteComponentProps> = ({ match }) => {
 
         <ContinueBtn
           style={{ margin: "60px auto" }}
-          disabled={
-            !aguaPotable ||
-            !drenaje ||
-            !tipoDrenaje ||
-            !medioDeposicion ||
-            !recoleccionBasura ||
-            !frecuenciaBasura ||
-            !parquesJardines ||
-            !sistemaAlmacenamientoAgua ||
-            !numCuartos ||
-            !jardinCasa ||
-            !tipoJardinEnCasa ||
-            !accesoTv ||
-            !accesoRadio ||
-            !celular
-          }
+          disabled={false}
           onClick={handleContinue}
         >
           Siguiente
