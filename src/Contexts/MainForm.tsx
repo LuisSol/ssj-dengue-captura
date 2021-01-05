@@ -8,11 +8,13 @@ type Action =
 type Dispatch = (action: Action) => void;
 type MasterFormProviderProps = { children: ReactNode };
 type State = {
+  // init
   enProceso: boolean;
   folio: string;
   zona: string;
   fechaLevantamiento: string;
   encuestador: string;
+  // sociodemografico
   nombre: string;
   idEncuestado: string;
   edad: string;
@@ -57,6 +59,35 @@ type State = {
   escolaridadIntegrante11: string;
   escolaridadIntegrante12: string;
   personasEnCasa4horasAlDia: string;
+  // servicios
+  aguaPotable: string;
+  drenaje: string;
+  tipoDrenaje: string;
+  medioDeposicion: string;
+  recoleccionBasura: string;
+  frecuenciaBasura: string;
+  parquesJardines: string;
+  sistemaAlmacenamientoAgua: string;
+  numCuartos: string;
+  jardinCasa: string;
+  tipoJardinEnCasa: string;
+  accesoTv: string;
+  numTvCasa: string;
+  accesoRadio: string;
+  numRadiosCasa: string;
+  celular: string;
+  celularIntegrante1: string;
+  celularIntegrante2: string;
+  celularIntegrante3: string;
+  celularIntegrante4: string;
+  celularIntegrante5: string;
+  celularIntegrante6: string;
+  celularIntegrante7: string;
+  celularIntegrante8: string;
+  celularIntegrante9: string;
+  celularIntegrante10: string;
+  celularIntegrante11: string;
+  celularIntegrante12: string;
 };
 
 const defaultFormData: State = {
@@ -109,6 +140,34 @@ const defaultFormData: State = {
   escolaridadIntegrante11: "",
   escolaridadIntegrante12: "",
   personasEnCasa4horasAlDia: "0",
+  aguaPotable: "",
+  drenaje: "",
+  tipoDrenaje: "",
+  medioDeposicion: "",
+  recoleccionBasura: "",
+  frecuenciaBasura: "",
+  parquesJardines: "",
+  sistemaAlmacenamientoAgua: "",
+  numCuartos: "",
+  jardinCasa: "",
+  tipoJardinEnCasa: "",
+  accesoTv: "",
+  numTvCasa: "",
+  accesoRadio: "",
+  numRadiosCasa: "",
+  celular: "",
+  celularIntegrante1: "",
+  celularIntegrante2: "",
+  celularIntegrante3: "",
+  celularIntegrante4: "",
+  celularIntegrante5: "",
+  celularIntegrante6: "",
+  celularIntegrante7: "",
+  celularIntegrante8: "",
+  celularIntegrante9: "",
+  celularIntegrante10: "",
+  celularIntegrante11: "",
+  celularIntegrante12: "",
 };
 
 const masterFormReducer = (state: State = defaultFormData, action: Action) => {
