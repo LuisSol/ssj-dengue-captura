@@ -10,6 +10,7 @@ import Sociodemograficas from "../../components/Sociodemograficas";
 import Footer from "../../components/ui/Footer";
 import Servicios from "../../components/Servicios";
 import Actividades from "../../components/Actividades";
+import Estrategias from "../../components/Estrategias";
 
 const MainForm: FC<RouteComponentProps> = ({ match }) => {
   return (
@@ -26,6 +27,11 @@ const MainForm: FC<RouteComponentProps> = ({ match }) => {
           path={`${match.url}/actividades`}
           exact
           component={Actividades}
+        />
+        <Route
+          path={`${match.url}/estrategias`}
+          exact
+          component={Estrategias}
         />
       </Switch>
       <Footer />

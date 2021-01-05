@@ -22,34 +22,90 @@ import NumInput from "../ui/InputNum";
 const Actividades: FC<RouteComponentProps> = ({ match }) => {
   const history = useHistory();
   const {
-    aguaPotable,
-    drenaje,
-    tipoDrenaje,
-    medioDeposicion,
-    recoleccionBasura,
-    frecuenciaBasura,
-    parquesJardines,
-    sistemaAlmacenamientoAgua,
-    numCuartos,
-    jardinCasa,
-    tipoJardinEnCasa,
-    accesoTv,
-    numTvCasa,
-    accesoRadio,
-    numRadiosCasa,
-    celular,
-    celularIntegrante1,
-    celularIntegrante2,
-    celularIntegrante3,
-    celularIntegrante4,
-    celularIntegrante5,
-    celularIntegrante6,
-    celularIntegrante7,
-    celularIntegrante8,
-    celularIntegrante9,
-    celularIntegrante10,
-    celularIntegrante11,
-    celularIntegrante12,
+    verTvIntegrante1,
+    verTvIntegrante2,
+    verTvIntegrante3,
+    verTvIntegrante4,
+    verTvIntegrante5,
+    verTvIntegrante6,
+    verTvIntegrante7,
+    verTvIntegrante8,
+    verTvIntegrante9,
+    verTvIntegrante10,
+    verTvIntegrante11,
+    verTvIntegrante12,
+    radioIntegrante1,
+    radioIntegrante2,
+    radioIntegrante3,
+    radioIntegrante4,
+    radioIntegrante5,
+    radioIntegrante6,
+    radioIntegrante7,
+    radioIntegrante8,
+    radioIntegrante9,
+    radioIntegrante10,
+    radioIntegrante11,
+    radioIntegrante12,
+    usarCelIntegrante1,
+    usarCelIntegrante2,
+    usarCelIntegrante3,
+    usarCelIntegrante4,
+    usarCelIntegrante5,
+    usarCelIntegrante6,
+    usarCelIntegrante7,
+    usarCelIntegrante8,
+    usarCelIntegrante9,
+    usarCelIntegrante10,
+    usarCelIntegrante11,
+    usarCelIntegrante12,
+    lecturaIntegrante1,
+    lecturaIntegrante2,
+    lecturaIntegrante3,
+    lecturaIntegrante4,
+    lecturaIntegrante5,
+    lecturaIntegrante6,
+    lecturaIntegrante7,
+    lecturaIntegrante8,
+    lecturaIntegrante9,
+    lecturaIntegrante10,
+    lecturaIntegrante11,
+    lecturaIntegrante12,
+    fisicaIntegrante1,
+    fisicaIntegrante2,
+    fisicaIntegrante3,
+    fisicaIntegrante4,
+    fisicaIntegrante5,
+    fisicaIntegrante6,
+    fisicaIntegrante7,
+    fisicaIntegrante8,
+    fisicaIntegrante9,
+    fisicaIntegrante10,
+    fisicaIntegrante11,
+    fisicaIntegrante12,
+    aseoIntegrante1,
+    aseoIntegrante2,
+    aseoIntegrante3,
+    aseoIntegrante4,
+    aseoIntegrante5,
+    aseoIntegrante6,
+    aseoIntegrante7,
+    aseoIntegrante8,
+    aseoIntegrante9,
+    aseoIntegrante10,
+    aseoIntegrante11,
+    aseoIntegrante12,
+    opcionAseoIntegrante1,
+    opcionAseoIntegrante2,
+    opcionAseoIntegrante3,
+    opcionAseoIntegrante4,
+    opcionAseoIntegrante5,
+    opcionAseoIntegrante6,
+    opcionAseoIntegrante7,
+    opcionAseoIntegrante8,
+    opcionAseoIntegrante9,
+    opcionAseoIntegrante10,
+    opcionAseoIntegrante11,
+    opcionAseoIntegrante12,
   } = useMasterForm();
   const formDispatcher = useMasterFormDistach();
 
@@ -57,7 +113,7 @@ const Actividades: FC<RouteComponentProps> = ({ match }) => {
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     e.preventDefault();
-    history.push(match.url.replace("/servicios", "/actividades"));
+    history.push(match.url.replace("/actividades", "/estrategias"));
   };
 
   const handleSelector = (value: string, field: string) => (
@@ -88,526 +144,1017 @@ const Actividades: FC<RouteComponentProps> = ({ match }) => {
       <BackBtn />
       <Title>Actividades en casa</Title>
       <FieldsContainer>
+        <p>Horas que dedica al día a:</p>
+        <h2 style={{ marginTop: 25 }}>Ver televisión</h2>
+        <NumInput
+          labelTxt="Integrante 1"
+          value={verTvIntegrante1}
+          id="verTvIntegrante1"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 2"
+          value={verTvIntegrante2}
+          id="verTvIntegrante2"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 3"
+          value={verTvIntegrante3}
+          id="verTvIntegrante3"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 4"
+          value={verTvIntegrante4}
+          id="verTvIntegrante4"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 5"
+          value={verTvIntegrante5}
+          id="verTvIntegrante5"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 6"
+          value={verTvIntegrante6}
+          id="verTvIntegrante6"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 7"
+          value={verTvIntegrante7}
+          id="verTvIntegrante7"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 8"
+          value={verTvIntegrante8}
+          id="verTvIntegrante8"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 9"
+          value={verTvIntegrante9}
+          id="verTvIntegrante9"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 10"
+          value={verTvIntegrante10}
+          id="verTvIntegrante10"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 11"
+          value={verTvIntegrante11}
+          id="verTvIntegrante11"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 12"
+          value={verTvIntegrante12}
+          id="verTvIntegrante12"
+          onChange={handleChangeJustNumber}
+        />
+        <h2 style={{ marginTop: 25 }}>Escuchar el radio</h2>
+        <NumInput
+          labelTxt="Integrante 1"
+          value={radioIntegrante1}
+          id="radioIntegrante1"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 2"
+          value={radioIntegrante2}
+          id="radioIntegrante2"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 3"
+          value={radioIntegrante3}
+          id="radioIntegrante3"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 4"
+          value={radioIntegrante4}
+          id="radioIntegrante4"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 5"
+          value={radioIntegrante5}
+          id="radioIntegrante5"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 6"
+          value={radioIntegrante6}
+          id="radioIntegrante6"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 7"
+          value={radioIntegrante7}
+          id="radioIntegrante7"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 8"
+          value={radioIntegrante8}
+          id="radioIntegrante8"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 9"
+          value={radioIntegrante9}
+          id="radioIntegrante9"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 10"
+          value={radioIntegrante10}
+          id="radioIntegrante10"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 11"
+          value={radioIntegrante11}
+          id="radioIntegrante11"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 12"
+          value={radioIntegrante12}
+          id="radioIntegrante12"
+          onChange={handleChangeJustNumber}
+        />
+        <h2 style={{ marginTop: 25 }}>Utilizar el celular</h2>
+        <NumInput
+          labelTxt="Integrante 1"
+          value={usarCelIntegrante1}
+          id="usarCelIntegrante1"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 2"
+          value={usarCelIntegrante2}
+          id="usarCelIntegrante2"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 3"
+          value={usarCelIntegrante3}
+          id="usarCelIntegrante3"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 4"
+          value={usarCelIntegrante4}
+          id="usarCelIntegrante4"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 5"
+          value={usarCelIntegrante5}
+          id="usarCelIntegrante5"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 6"
+          value={usarCelIntegrante6}
+          id="usarCelIntegrante6"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 7"
+          value={usarCelIntegrante7}
+          id="usarCelIntegrante7"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 8"
+          value={usarCelIntegrante8}
+          id="usarCelIntegrante8"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 9"
+          value={usarCelIntegrante9}
+          id="usarCelIntegrante9"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 10"
+          value={usarCelIntegrante10}
+          id="usarCelIntegrante10"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 11"
+          value={usarCelIntegrante11}
+          id="usarCelIntegrante11"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 12"
+          value={usarCelIntegrante12}
+          id="usarCelIntegrante12"
+          onChange={handleChangeJustNumber}
+        />
+        <h2 style={{ marginTop: 25 }}>Lectura</h2>
+        <NumInput
+          labelTxt="Integrante 1"
+          value={lecturaIntegrante1}
+          id="lecturaIntegrante1"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 2"
+          value={lecturaIntegrante2}
+          id="lecturaIntegrante2"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 3"
+          value={lecturaIntegrante3}
+          id="lecturaIntegrante3"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 4"
+          value={lecturaIntegrante4}
+          id="lecturaIntegrante4"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 5"
+          value={lecturaIntegrante5}
+          id="lecturaIntegrante5"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 6"
+          value={lecturaIntegrante6}
+          id="lecturaIntegrante6"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 7"
+          value={lecturaIntegrante7}
+          id="lecturaIntegrante7"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 8"
+          value={lecturaIntegrante8}
+          id="lecturaIntegrante8"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 9"
+          value={lecturaIntegrante9}
+          id="lecturaIntegrante9"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 10"
+          value={lecturaIntegrante10}
+          id="lecturaIntegrante10"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 11"
+          value={lecturaIntegrante11}
+          id="lecturaIntegrante11"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 12"
+          value={lecturaIntegrante12}
+          id="lecturaIntegrante12"
+          onChange={handleChangeJustNumber}
+        />
+        <h2 style={{ marginTop: 25 }}>Actividad física/deporte</h2>
+        <NumInput
+          labelTxt="Integrante 1"
+          value={fisicaIntegrante1}
+          id="fisicaIntegrante1"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 2"
+          value={fisicaIntegrante2}
+          id="fisicaIntegrante2"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 3"
+          value={fisicaIntegrante3}
+          id="fisicaIntegrante3"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 4"
+          value={fisicaIntegrante4}
+          id="fisicaIntegrante4"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 5"
+          value={fisicaIntegrante5}
+          id="fisicaIntegrante5"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 6"
+          value={fisicaIntegrante6}
+          id="fisicaIntegrante6"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 7"
+          value={fisicaIntegrante7}
+          id="fisicaIntegrante7"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 8"
+          value={fisicaIntegrante8}
+          id="fisicaIntegrante8"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 9"
+          value={fisicaIntegrante9}
+          id="fisicaIntegrante9"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 10"
+          value={fisicaIntegrante10}
+          id="fisicaIntegrante10"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 11"
+          value={fisicaIntegrante11}
+          id="fisicaIntegrante11"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 12"
+          value={fisicaIntegrante12}
+          id="fisicaIntegrante12"
+          onChange={handleChangeJustNumber}
+        />
+        <h2 style={{ marginTop: 25 }}> Aseo de la casa</h2>
+        <NumInput
+          labelTxt="Integrante 1"
+          value={aseoIntegrante1}
+          id="aseoIntegrante1"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 2"
+          value={aseoIntegrante2}
+          id="aseoIntegrante2"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 3"
+          value={aseoIntegrante3}
+          id="aseoIntegrante3"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 4"
+          value={aseoIntegrante4}
+          id="aseoIntegrante4"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 5"
+          value={aseoIntegrante5}
+          id="aseoIntegrante5"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 6"
+          value={aseoIntegrante6}
+          id="aseoIntegrante6"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 7"
+          value={aseoIntegrante7}
+          id="aseoIntegrante7"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 8"
+          value={aseoIntegrante8}
+          id="aseoIntegrante8"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 9"
+          value={aseoIntegrante9}
+          id="aseoIntegrante9"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 10"
+          value={aseoIntegrante10}
+          id="aseoIntegrante10"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 11"
+          value={aseoIntegrante11}
+          id="aseoIntegrante11"
+          onChange={handleChangeJustNumber}
+        />
+        <NumInput
+          labelTxt="Integrante 12"
+          value={aseoIntegrante12}
+          id="aseoIntegrante12"
+          onChange={handleChangeJustNumber}
+        />
+        <h2 style={{ marginTop: 25 }}>
+          Si no se realiza diariamente ¿Qué tan seguido realiza en aseo en su
+          casa?
+        </h2>
         <SelectorContainer>
-          <p>Agua Potable</p>
+          <p>Integrante 1</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "aguaPotable")}
-              selected={aguaPotable === "Si"}
+              onClick={handleSelector(
+                "Cada tercer día",
+                "opcionAseoIntegrante1"
+              )}
+              selected={opcionAseoIntegrante1 === "Cada tercer día"}
             >
-              Si
+              Cada tercer día
             </Selector>
             <Selector
-              onClick={handleSelector("No", "aguaPotable")}
-              selected={aguaPotable === "No"}
+              onClick={handleSelector(
+                "Una vez a la semana",
+                "opcionAseoIntegrante1"
+              )}
+              selected={opcionAseoIntegrante1 === "Una vez a la semana"}
             >
-              No
-            </Selector>
-          </OptionsWrapper>
-        </SelectorContainer>
-        <SelectorContainer>
-          <p>Drenaje</p>
-          <OptionsWrapper>
-            <Selector
-              onClick={handleSelector("Si", "drenaje")}
-              selected={drenaje === "Si"}
-            >
-              Si
-            </Selector>
-            <Selector
-              onClick={handleSelector("No", "drenaje")}
-              selected={drenaje === "No"}
-            >
-              No
-            </Selector>
-          </OptionsWrapper>
-        </SelectorContainer>
-        <SelectorContainer>
-          <p>Tipo de Drenaje</p>
-          <OptionsWrapper>
-            <Selector
-              onClick={handleSelector("Si", "tipoDrenaje")}
-              selected={tipoDrenaje === "Si"}
-            >
-              Entubado
-            </Selector>
-            <Selector
-              onClick={handleSelector("No", "tipoDrenaje")}
-              selected={tipoDrenaje === "No"}
-            >
-              Abierto
-            </Selector>
-          </OptionsWrapper>
-        </SelectorContainer>
-        <SelectorContainer>
-          <p>Medio de deposición de Excretas</p>
-          <OptionsWrapper>
-            <Selector
-              onClick={handleSelector("Sanitario", "medioDeposicion")}
-              selected={medioDeposicion === "Sanitario"}
-            >
-              Sanitario
-            </Selector>
-            <Selector
-              onClick={handleSelector("Letrina", "medioDeposicion")}
-              selected={medioDeposicion === "Letrina"}
-            >
-              Letrina
-            </Selector>
-          </OptionsWrapper>
-        </SelectorContainer>
-        <SelectorContainer>
-          <p>Recolección de basura </p>
-          <OptionsWrapper>
-            <Selector
-              onClick={handleSelector("Si", "recoleccionBasura")}
-              selected={recoleccionBasura === "Si"}
-            >
-              Si
-            </Selector>
-            <Selector
-              onClick={handleSelector("No", "recoleccionBasura")}
-              selected={recoleccionBasura === "No"}
-            >
-              No
-            </Selector>
-          </OptionsWrapper>
-        </SelectorContainer>
-        <SelectorContainer>
-          <p>Frecuencia recolección de basura </p>
-          <OptionsWrapper>
-            <Selector
-              onClick={handleSelector("Diario", "frecuenciaBasura")}
-              selected={frecuenciaBasura === "Diario"}
-            >
-              Diario
-            </Selector>
-            <Selector
-              onClick={handleSelector("Cada 3er día", "frecuenciaBasura")}
-              selected={frecuenciaBasura === "Cada 3er día"}
-            >
-              Cada 3er día
-            </Selector>
-            <Selector
-              onClick={handleSelector("Una vez por semana", "frecuenciaBasura")}
-              selected={frecuenciaBasura === "Una vez por semana"}
-            >
-              Una vez por semana
+              Una vez a la semana
             </Selector>
             <Selector
               onClick={handleSelector(
                 "Una vez cada quince días",
-                "frecuenciaBasura"
+                "opcionAseoIntegrante1"
               )}
-              selected={frecuenciaBasura === "Una vez cada quince días"}
+              selected={opcionAseoIntegrante1 === "Una vez cada quince días"}
             >
               Una vez cada quince días
             </Selector>
-          </OptionsWrapper>
-        </SelectorContainer>
-        <SelectorContainer>
-          <p>Parques y jardines cercanos</p>
-          <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "parquesJardines")}
-              selected={parquesJardines === "Si"}
+              onClick={handleSelector(
+                "Una vez al mes",
+                "opcionAseoIntegrante1"
+              )}
+              selected={opcionAseoIntegrante1 === "Una vez al mes"}
             >
-              Si
+              Una vez al mes
             </Selector>
             <Selector
-              onClick={handleSelector("No", "parquesJardines")}
-              selected={parquesJardines === "No"}
+              onClick={handleSelector("Nunca", "opcionAseoIntegrante1")}
+              selected={opcionAseoIntegrante1 === "Nunca"}
             >
-              No
+              Nunca
             </Selector>
           </OptionsWrapper>
         </SelectorContainer>
         <SelectorContainer>
-          <p>Frecuencia recolección de basura </p>
+          <p>Integrante 2</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Tinaco", "sistemaAlmacenamientoAgua")}
-              selected={sistemaAlmacenamientoAgua === "Tinaco"}
+              onClick={handleSelector(
+                "Cada tercer día",
+                "opcionAseoIntegrante2"
+              )}
+              selected={opcionAseoIntegrante2 === "Cada tercer día"}
             >
-              Tinaco
-            </Selector>
-            <Selector
-              onClick={handleSelector("Piletas", "sistemaAlmacenamientoAgua")}
-              selected={sistemaAlmacenamientoAgua === "Piletas"}
-            >
-              Piletas
+              Cada tercer día
             </Selector>
             <Selector
               onClick={handleSelector(
-                "Tambos/botes",
-                "sistemaAlmacenamientoAgua"
+                "Una vez a la semana",
+                "opcionAseoIntegrante2"
               )}
-              selected={sistemaAlmacenamientoAgua === "Tambos/botes"}
+              selected={opcionAseoIntegrante2 === "Una vez a la semana"}
             >
-              Tambos/botes
-            </Selector>
-            <Selector
-              onClick={handleSelector("Aljiber", "sistemaAlmacenamientoAgua")}
-              selected={sistemaAlmacenamientoAgua === "Aljiber"}
-            >
-              Aljiber
+              Una vez a la semana
             </Selector>
             <Selector
               onClick={handleSelector(
-                "Pozo natural",
-                "sistemaAlmacenamientoAgua"
+                "Una vez cada quince días",
+                "opcionAseoIntegrante2"
               )}
-              selected={sistemaAlmacenamientoAgua === "Pozo natural"}
+              selected={opcionAseoIntegrante2 === "Una vez cada quince días"}
             >
-              Pozo natural
-            </Selector>
-          </OptionsWrapper>
-        </SelectorContainer>
-        <NumInput
-          labelTxt="Número de cuartos en su casa"
-          value={numCuartos}
-          id="numCuartos"
-          onChange={handleChangeJustNumber}
-        />
-        <SelectorContainer>
-          <p>¿Cuenta con jardin en casa? </p>
-          <OptionsWrapper>
-            <Selector
-              onClick={handleSelector("Si", "jardinCasa")}
-              selected={jardinCasa === "Si"}
-            >
-              Si
+              Una vez cada quince días
             </Selector>
             <Selector
-              onClick={handleSelector("No", "jardinCasa")}
-              selected={jardinCasa === "No"}
+              onClick={handleSelector(
+                "Una vez al mes",
+                "opcionAseoIntegrante2"
+              )}
+              selected={opcionAseoIntegrante2 === "Una vez al mes"}
             >
-              No
+              Una vez al mes
+            </Selector>
+            <Selector
+              onClick={handleSelector("Nunca", "opcionAseoIntegrante2")}
+              selected={opcionAseoIntegrante2 === "Nunca"}
+            >
+              Nunca
             </Selector>
           </OptionsWrapper>
         </SelectorContainer>
         <SelectorContainer>
-          <p>¿Cuenta con jardin en casa? </p>
+          <p>Integrante 3</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Interior", "tipoJardinEnCasa")}
-              selected={tipoJardinEnCasa === "Interior"}
+              onClick={handleSelector(
+                "Cada tercer día",
+                "opcionAseoIntegrante3"
+              )}
+              selected={opcionAseoIntegrante3 === "Cada tercer día"}
             >
-              Interior
+              Cada tercer día
             </Selector>
             <Selector
-              onClick={handleSelector("Exterior", "tipoJardinEnCasa")}
-              selected={tipoJardinEnCasa === "Exterior"}
+              onClick={handleSelector(
+                "Una vez a la semana",
+                "opcionAseoIntegrante3"
+              )}
+              selected={opcionAseoIntegrante3 === "Una vez a la semana"}
             >
-              Exterior
+              Una vez a la semana
             </Selector>
             <Selector
-              onClick={handleSelector("Ambos", "tipoJardinEnCasa")}
-              selected={tipoJardinEnCasa === "Ambos"}
+              onClick={handleSelector(
+                "Una vez cada quince días",
+                "opcionAseoIntegrante3"
+              )}
+              selected={opcionAseoIntegrante3 === "Una vez cada quince días"}
             >
-              Ambos
+              Una vez cada quince días
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez al mes",
+                "opcionAseoIntegrante3"
+              )}
+              selected={opcionAseoIntegrante3 === "Una vez al mes"}
+            >
+              Una vez al mes
+            </Selector>
+            <Selector
+              onClick={handleSelector("Nunca", "opcionAseoIntegrante3")}
+              selected={opcionAseoIntegrante3 === "Nunca"}
+            >
+              Nunca
             </Selector>
           </OptionsWrapper>
         </SelectorContainer>
         <SelectorContainer>
-          <p> Acceso a televisión</p>
+          <p>Integrante 4</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "accesoTv")}
-              selected={accesoTv === "Si"}
+              onClick={handleSelector(
+                "Cada tercer día",
+                "opcionAseoIntegrante4"
+              )}
+              selected={opcionAseoIntegrante4 === "Cada tercer día"}
             >
-              Si
+              Cada tercer día
             </Selector>
             <Selector
-              onClick={handleSelector("No", "accesoTv")}
-              selected={accesoTv === "No"}
+              onClick={handleSelector(
+                "Una vez a la semana",
+                "opcionAseoIntegrante4"
+              )}
+              selected={opcionAseoIntegrante4 === "Una vez a la semana"}
             >
-              No
+              Una vez a la semana
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez cada quince días",
+                "opcionAseoIntegrante4"
+              )}
+              selected={opcionAseoIntegrante4 === "Una vez cada quince días"}
+            >
+              Una vez cada quince días
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez al mes",
+                "opcionAseoIntegrante4"
+              )}
+              selected={opcionAseoIntegrante4 === "Una vez al mes"}
+            >
+              Una vez al mes
+            </Selector>
+            <Selector
+              onClick={handleSelector("Nunca", "opcionAseoIntegrante4")}
+              selected={opcionAseoIntegrante4 === "Nunca"}
+            >
+              Nunca
             </Selector>
           </OptionsWrapper>
         </SelectorContainer>
-        <NumInput
-          labelTxt="Número de televisiones en casa"
-          value={numTvCasa}
-          id="numTvCasa"
-          onChange={handleChangeJustNumber}
-        />
         <SelectorContainer>
-          <p> Acceso a la radio</p>
+          <p>Integrante 5</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "accesoRadio")}
-              selected={accesoRadio === "Si"}
+              onClick={handleSelector(
+                "Cada tercer día",
+                "opcionAseoIntegrante5"
+              )}
+              selected={opcionAseoIntegrante5 === "Cada tercer día"}
             >
-              Si
+              Cada tercer día
             </Selector>
             <Selector
-              onClick={handleSelector("No", "accesoRadio")}
-              selected={accesoRadio === "No"}
+              onClick={handleSelector(
+                "Una vez a la semana",
+                "opcionAseoIntegrante5"
+              )}
+              selected={opcionAseoIntegrante5 === "Una vez a la semana"}
             >
-              No
+              Una vez a la semana
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez cada quince días",
+                "opcionAseoIntegrante5"
+              )}
+              selected={opcionAseoIntegrante5 === "Una vez cada quince días"}
+            >
+              Una vez cada quince días
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez al mes",
+                "opcionAseoIntegrante5"
+              )}
+              selected={opcionAseoIntegrante5 === "Una vez al mes"}
+            >
+              Una vez al mes
+            </Selector>
+            <Selector
+              onClick={handleSelector("Nunca", "opcionAseoIntegrante5")}
+              selected={opcionAseoIntegrante5 === "Nunca"}
+            >
+              Nunca
             </Selector>
           </OptionsWrapper>
         </SelectorContainer>
-        <NumInput
-          labelTxt="Número de radios en casa"
-          value={numRadiosCasa}
-          id="numRadiosCasa"
-          onChange={handleChangeJustNumber}
-        />
         <SelectorContainer>
-          <p> Celular (Teléfono inteligente/smartphone)</p>
+          <p>Integrante 6</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celular")}
-              selected={celular === "Si"}
+              onClick={handleSelector(
+                "Cada tercer día",
+                "opcionAseoIntegrante6"
+              )}
+              selected={opcionAseoIntegrante6 === "Cada tercer día"}
             >
-              Si
+              Cada tercer día
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celular")}
-              selected={celular === "No"}
+              onClick={handleSelector(
+                "Una vez a la semana",
+                "opcionAseoIntegrante6"
+              )}
+              selected={opcionAseoIntegrante6 === "Una vez a la semana"}
             >
-              No
+              Una vez a la semana
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez cada quince días",
+                "opcionAseoIntegrante6"
+              )}
+              selected={opcionAseoIntegrante6 === "Una vez cada quince días"}
+            >
+              Una vez cada quince días
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez al mes",
+                "opcionAseoIntegrante6"
+              )}
+              selected={opcionAseoIntegrante6 === "Una vez al mes"}
+            >
+              Una vez al mes
+            </Selector>
+            <Selector
+              onClick={handleSelector("Nunca", "opcionAseoIntegrante6")}
+              selected={opcionAseoIntegrante6 === "Nunca"}
+            >
+              Nunca
             </Selector>
           </OptionsWrapper>
         </SelectorContainer>
-        <h2 style={{ margin: "25px 0" }}>Integrantes en casa</h2>
-        <h3>Integrante 1</h3>
         <SelectorContainer>
-          <p> Celular (Teléfono inteligente/smartphone)</p>
+          <p>Integrante 7</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante1")}
-              selected={celularIntegrante1 === "Si"}
+              onClick={handleSelector(
+                "Cada tercer día",
+                "opcionAseoIntegrante7"
+              )}
+              selected={opcionAseoIntegrante7 === "Cada tercer día"}
             >
-              Si
+              Cada tercer día
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante1")}
-              selected={celularIntegrante1 === "No"}
+              onClick={handleSelector(
+                "Una vez a la semana",
+                "opcionAseoIntegrante7"
+              )}
+              selected={opcionAseoIntegrante7 === "Una vez a la semana"}
             >
-              No
+              Una vez a la semana
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez cada quince días",
+                "opcionAseoIntegrante7"
+              )}
+              selected={opcionAseoIntegrante7 === "Una vez cada quince días"}
+            >
+              Una vez cada quince días
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez al mes",
+                "opcionAseoIntegrante7"
+              )}
+              selected={opcionAseoIntegrante7 === "Una vez al mes"}
+            >
+              Una vez al mes
+            </Selector>
+            <Selector
+              onClick={handleSelector("Nunca", "opcionAseoIntegrante7")}
+              selected={opcionAseoIntegrante7 === "Nunca"}
+            >
+              Nunca
             </Selector>
           </OptionsWrapper>
         </SelectorContainer>
-        <h3>Integrante 2</h3>
         <SelectorContainer>
-          <p> Celular (Teléfono inteligente/smartphone)</p>
+          <p>Integrante 8</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante1")}
-              selected={celularIntegrante2 === "Si"}
+              onClick={handleSelector(
+                "Cada tercer día",
+                "opcionAseoIntegrante8"
+              )}
+              selected={opcionAseoIntegrante8 === "Cada tercer día"}
             >
-              Si
+              Cada tercer día
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante1")}
-              selected={celularIntegrante2 === "No"}
+              onClick={handleSelector(
+                "Una vez a la semana",
+                "opcionAseoIntegrante8"
+              )}
+              selected={opcionAseoIntegrante8 === "Una vez a la semana"}
             >
-              No
+              Una vez a la semana
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez cada quince días",
+                "opcionAseoIntegrante8"
+              )}
+              selected={opcionAseoIntegrante8 === "Una vez cada quince días"}
+            >
+              Una vez cada quince días
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez al mes",
+                "opcionAseoIntegrante8"
+              )}
+              selected={opcionAseoIntegrante8 === "Una vez al mes"}
+            >
+              Una vez al mes
+            </Selector>
+            <Selector
+              onClick={handleSelector("Nunca", "opcionAseoIntegrante8")}
+              selected={opcionAseoIntegrante8 === "Nunca"}
+            >
+              Nunca
             </Selector>
           </OptionsWrapper>
         </SelectorContainer>
-        <h3>Integrante 3</h3>
         <SelectorContainer>
-          <p> Celular (Teléfono inteligente/smartphone)</p>
+          <p>Integrante 9</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante1")}
-              selected={celularIntegrante3 === "Si"}
+              onClick={handleSelector(
+                "Cada tercer día",
+                "opcionAseoIntegrante9"
+              )}
+              selected={opcionAseoIntegrante9 === "Cada tercer día"}
             >
-              Si
+              Cada tercer día
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante1")}
-              selected={celularIntegrante3 === "No"}
+              onClick={handleSelector(
+                "Una vez a la semana",
+                "opcionAseoIntegrante9"
+              )}
+              selected={opcionAseoIntegrante9 === "Una vez a la semana"}
             >
-              No
+              Una vez a la semana
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez cada quince días",
+                "opcionAseoIntegrante9"
+              )}
+              selected={opcionAseoIntegrante9 === "Una vez cada quince días"}
+            >
+              Una vez cada quince días
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez al mes",
+                "opcionAseoIntegrante9"
+              )}
+              selected={opcionAseoIntegrante9 === "Una vez al mes"}
+            >
+              Una vez al mes
+            </Selector>
+            <Selector
+              onClick={handleSelector("Nunca", "opcionAseoIntegrante9")}
+              selected={opcionAseoIntegrante9 === "Nunca"}
+            >
+              Nunca
             </Selector>
           </OptionsWrapper>
         </SelectorContainer>
-        <h3>Integrante 4</h3>
         <SelectorContainer>
-          <p> Celular (Teléfono inteligente/smartphone)</p>
+          <p>Integrante 10</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante1")}
-              selected={celularIntegrante4 === "Si"}
+              onClick={handleSelector(
+                "Cada tercer día",
+                "opcionAseoIntegrante10"
+              )}
+              selected={opcionAseoIntegrante10 === "Cada tercer día"}
             >
-              Si
+              Cada tercer día
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante1")}
-              selected={celularIntegrante4 === "No"}
+              onClick={handleSelector(
+                "Una vez a la semana",
+                "opcionAseoIntegrante10"
+              )}
+              selected={opcionAseoIntegrante10 === "Una vez a la semana"}
             >
-              No
+              Una vez a la semana
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez cada quince días",
+                "opcionAseoIntegrante10"
+              )}
+              selected={opcionAseoIntegrante10 === "Una vez cada quince días"}
+            >
+              Una vez cada quince días
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez al mes",
+                "opcionAseoIntegrante10"
+              )}
+              selected={opcionAseoIntegrante10 === "Una vez al mes"}
+            >
+              Una vez al mes
+            </Selector>
+            <Selector
+              onClick={handleSelector("Nunca", "opcionAseoIntegrante10")}
+              selected={opcionAseoIntegrante10 === "Nunca"}
+            >
+              Nunca
             </Selector>
           </OptionsWrapper>
         </SelectorContainer>
-        <h3>Integrante 5</h3>
         <SelectorContainer>
-          <p> Celular (Teléfono inteligente/smartphone)</p>
+          <p>Integrante 11</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante1")}
-              selected={celularIntegrante5 === "Si"}
+              onClick={handleSelector(
+                "Cada tercer día",
+                "opcionAseoIntegrante11"
+              )}
+              selected={opcionAseoIntegrante11 === "Cada tercer día"}
             >
-              Si
+              Cada tercer día
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante1")}
-              selected={celularIntegrante5 === "No"}
+              onClick={handleSelector(
+                "Una vez a la semana",
+                "opcionAseoIntegrante11"
+              )}
+              selected={opcionAseoIntegrante11 === "Una vez a la semana"}
             >
-              No
+              Una vez a la semana
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez cada quince días",
+                "opcionAseoIntegrante11"
+              )}
+              selected={opcionAseoIntegrante11 === "Una vez cada quince días"}
+            >
+              Una vez cada quince días
+            </Selector>
+            <Selector
+              onClick={handleSelector(
+                "Una vez al mes",
+                "opcionAseoIntegrante11"
+              )}
+              selected={opcionAseoIntegrante11 === "Una vez al mes"}
+            >
+              Una vez al mes
+            </Selector>
+            <Selector
+              onClick={handleSelector("Nunca", "opcionAseoIntegrante11")}
+              selected={opcionAseoIntegrante11 === "Nunca"}
+            >
+              Nunca
             </Selector>
           </OptionsWrapper>
         </SelectorContainer>
-        <h3>Integrante 6</h3>
         <SelectorContainer>
-          <p> Celular (Teléfono inteligente/smartphone)</p>
+          <p>Integrante 12</p>
           <OptionsWrapper>
             <Selector
-              onClick={handleSelector("Si", "celularIntegrante1")}
-              selected={celularIntegrante6 === "Si"}
+              onClick={handleSelector(
+                "Cada tercer día",
+                "opcionAseoIntegrante12"
+              )}
+              selected={opcionAseoIntegrante12 === "Cada tercer día"}
             >
-              Si
+              Cada tercer día
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante1")}
-              selected={celularIntegrante6 === "No"}
+              onClick={handleSelector(
+                "Una vez a la semana",
+                "opcionAseoIntegrante12"
+              )}
+              selected={opcionAseoIntegrante12 === "Una vez a la semana"}
             >
-              No
-            </Selector>
-          </OptionsWrapper>
-        </SelectorContainer>
-        <h3>Integrante 7</h3>
-        <SelectorContainer>
-          <p> Celular (Teléfono inteligente/smartphone)</p>
-          <OptionsWrapper>
-            <Selector
-              onClick={handleSelector("Si", "celularIntegrante1")}
-              selected={celularIntegrante7 === "Si"}
-            >
-              Si
+              Una vez a la semana
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante1")}
-              selected={celularIntegrante7 === "No"}
+              onClick={handleSelector(
+                "Una vez cada quince días",
+                "opcionAseoIntegrante12"
+              )}
+              selected={opcionAseoIntegrante12 === "Una vez cada quince días"}
             >
-              No
-            </Selector>
-          </OptionsWrapper>
-        </SelectorContainer>
-        <h3>Integrante 8</h3>
-        <SelectorContainer>
-          <p> Celular (Teléfono inteligente/smartphone)</p>
-          <OptionsWrapper>
-            <Selector
-              onClick={handleSelector("Si", "celularIntegrante1")}
-              selected={celularIntegrante8 === "Si"}
-            >
-              Si
+              Una vez cada quince días
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante1")}
-              selected={celularIntegrante8 === "No"}
+              onClick={handleSelector(
+                "Una vez al mes",
+                "opcionAseoIntegrante12"
+              )}
+              selected={opcionAseoIntegrante12 === "Una vez al mes"}
             >
-              No
-            </Selector>
-          </OptionsWrapper>
-        </SelectorContainer>
-        <h3>Integrante 9</h3>
-        <SelectorContainer>
-          <p> Celular (Teléfono inteligente/smartphone)</p>
-          <OptionsWrapper>
-            <Selector
-              onClick={handleSelector("Si", "celularIntegrante1")}
-              selected={celularIntegrante9 === "Si"}
-            >
-              Si
+              Una vez al mes
             </Selector>
             <Selector
-              onClick={handleSelector("No", "celularIntegrante1")}
-              selected={celularIntegrante9 === "No"}
+              onClick={handleSelector("Nunca", "opcionAseoIntegrante12")}
+              selected={opcionAseoIntegrante12 === "Nunca"}
             >
-              No
-            </Selector>
-          </OptionsWrapper>
-        </SelectorContainer>
-        <h3>Integrante 10</h3>
-        <SelectorContainer>
-          <p> Celular (Teléfono inteligente/smartphone)</p>
-          <OptionsWrapper>
-            <Selector
-              onClick={handleSelector("Si", "celularIntegrante1")}
-              selected={celularIntegrante10 === "Si"}
-            >
-              Si
-            </Selector>
-            <Selector
-              onClick={handleSelector("No", "celularIntegrante1")}
-              selected={celularIntegrante10 === "No"}
-            >
-              No
-            </Selector>
-          </OptionsWrapper>
-        </SelectorContainer>
-        <h3>Integrante 11</h3>
-        <SelectorContainer>
-          <p> Celular (Teléfono inteligente/smartphone)</p>
-          <OptionsWrapper>
-            <Selector
-              onClick={handleSelector("Si", "celularIntegrante1")}
-              selected={celularIntegrante11 === "Si"}
-            >
-              Si
-            </Selector>
-            <Selector
-              onClick={handleSelector("No", "celularIntegrante1")}
-              selected={celularIntegrante11 === "No"}
-            >
-              No
-            </Selector>
-          </OptionsWrapper>
-        </SelectorContainer>
-        <h3>Integrante 12</h3>
-        <SelectorContainer>
-          <p> Celular (Teléfono inteligente/smartphone)</p>
-          <OptionsWrapper>
-            <Selector
-              onClick={handleSelector("Si", "celularIntegrante1")}
-              selected={celularIntegrante12 === "Si"}
-            >
-              Si
-            </Selector>
-            <Selector
-              onClick={handleSelector("No", "celularIntegrante1")}
-              selected={celularIntegrante12 === "No"}
-            >
-              No
+              Nunca
             </Selector>
           </OptionsWrapper>
         </SelectorContainer>
 
         <ContinueBtn
           style={{ margin: "60px auto" }}
-          disabled={
-            !aguaPotable ||
-            !drenaje ||
-            !tipoDrenaje ||
-            !medioDeposicion ||
-            !recoleccionBasura ||
-            !frecuenciaBasura ||
-            !parquesJardines ||
-            !sistemaAlmacenamientoAgua ||
-            !numCuartos ||
-            !jardinCasa ||
-            !tipoJardinEnCasa ||
-            !accesoTv ||
-            !accesoRadio ||
-            !celular
-          }
+          disabled={false}
           onClick={handleContinue}
         >
           Siguiente
