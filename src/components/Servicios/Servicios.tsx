@@ -223,7 +223,7 @@ const Servicios: FC<RouteComponentProps> = ({ match }) => {
           </OptionsWrapper>
         </SelectorContainer>
         <SelectorContainer>
-          <p>Frecuencia recolección de basura </p>
+          <p>Sistema de almacenamiento de agua </p>
           <OptionsWrapper>
             <Selector
               onClick={handleSelector("Tinaco", "sistemaAlmacenamientoAgua")}
