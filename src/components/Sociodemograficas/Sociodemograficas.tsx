@@ -33,7 +33,6 @@ const Sociodemograficas: FC<RouteComponentProps> = ({ match }) => {
     ocupacion,
     domicilio,
     numIntegrantes,
-    idIntegrante1,
     idIntegrante2,
     idIntegrante10,
     idIntegrante11,
@@ -44,7 +43,6 @@ const Sociodemograficas: FC<RouteComponentProps> = ({ match }) => {
     idIntegrante7,
     idIntegrante8,
     idIntegrante9,
-    edadIntegrante1,
     edadIntegrante10,
     edadIntegrante11,
     edadIntegrante12,
@@ -56,7 +54,6 @@ const Sociodemograficas: FC<RouteComponentProps> = ({ match }) => {
     edadIntegrante7,
     edadIntegrante8,
     edadIntegrante9,
-    escolaridadIntegrante1,
     escolaridadIntegrante10,
     escolaridadIntegrante11,
     escolaridadIntegrante12,
@@ -331,107 +328,6 @@ const Sociodemograficas: FC<RouteComponentProps> = ({ match }) => {
           onChange={handleChangeJustNumber}
         />
         <h2 style={{ margin: "25px 0" }}>Integrantes en casa</h2>
-        <h3>Integrante 1</h3>
-        <SelectorContainer>
-          <p>Identificación</p>
-          <OptionsWrapper>
-            <Selector
-              onClick={handleSelector("1", "idIntegrante1")}
-              selected={idIntegrante1 === "1"}
-            >
-              Abuelo
-            </Selector>
-            <Selector
-              onClick={handleSelector("2", "idIntegrante1")}
-              selected={idIntegrante1 === "2"}
-            >
-              Abuela
-            </Selector>
-            <Selector
-              onClick={handleSelector("3", "idIntegrante1")}
-              selected={idIntegrante1 === "3"}
-            >
-              Madre
-            </Selector>
-            <Selector
-              onClick={handleSelector("4", "idIntegrante1")}
-              selected={idIntegrante1 === "4"}
-            >
-              Padre
-            </Selector>
-            <Selector
-              onClick={handleSelector("5", "idIntegrante1")}
-              selected={idIntegrante1 === "5"}
-            >
-              Hijo
-            </Selector>
-            <Selector
-              onClick={handleSelector("6", "idIntegrante1")}
-              selected={idIntegrante1 === "6"}
-            >
-              Hija
-            </Selector>
-            <Selector
-              onClick={handleSelector("7", "idIntegrante1")}
-              selected={idIntegrante1 === "7"}
-            >
-              Otro
-            </Selector>
-          </OptionsWrapper>
-        </SelectorContainer>
-        <NumInput
-          labelTxt="Edad"
-          value={edadIntegrante1}
-          id="edadIntegrante1"
-          onChange={handleChangeJustNumber}
-        />
-        <SelectorContainer>
-          <p>Escolaridad</p>
-          <OptionsWrapper>
-            <Selector
-              onClick={handleSelector("1", "escolaridadIntegrante1")}
-              selected={escolaridadIntegrante1 === "1"}
-            >
-              Ninguna
-            </Selector>
-            <Selector
-              onClick={handleSelector("2", "escolaridadIntegrante1")}
-              selected={escolaridadIntegrante1 === "2"}
-            >
-              Primaria
-            </Selector>
-            <Selector
-              onClick={handleSelector("3", "escolaridadIntegrante1")}
-              selected={escolaridadIntegrante1 === "3"}
-            >
-              Secundaria
-            </Selector>
-            <Selector
-              onClick={handleSelector("4", "escolaridadIntegrante1")}
-              selected={escolaridadIntegrante1 === "4"}
-            >
-              Prepa
-            </Selector>
-            <Selector
-              onClick={handleSelector("5", "escolaridadIntegrante1")}
-              selected={escolaridadIntegrante1 === "5"}
-            >
-              Licenciatura
-            </Selector>
-            <Selector
-              onClick={handleSelector("6", "escolaridadIntegrante1")}
-              selected={escolaridadIntegrante1 === "6"}
-            >
-              Universidad
-            </Selector>
-            <Selector
-              onClick={handleSelector("7", "escolaridadIntegrante1")}
-              selected={escolaridadIntegrante1 === "7"}
-            >
-              Postgrado
-            </Selector>
-          </OptionsWrapper>
-        </SelectorContainer>
         <h3>Integrante 2</h3>
         <SelectorContainer>
           <p>Identificación</p>
