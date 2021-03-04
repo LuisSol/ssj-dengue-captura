@@ -7,7 +7,7 @@ type Action =
 
 type Dispatch = (action: Action) => void;
 type MasterFormProviderProps = { children: ReactNode };
-type State = {
+export type Encuesta = {
   // init
   enProceso: boolean | null;
   folio: string;
@@ -219,7 +219,7 @@ type State = {
   detalleMedio: string;
 };
 
-const defaultFormData: State = {
+const defaultFormData: Encuesta = {
   enProceso: false,
   folio: "",
   zona: "",
@@ -426,7 +426,10 @@ const defaultFormData: State = {
   detalleMedio: "",
 };
 
-const masterFormReducer = (state: State = defaultFormData, action: Action) => {
+const masterFormReducer = (
+  state: Encuesta = defaultFormData,
+  action: Action
+) => {
   switch (action.type) {
     case "SET_VALUE":
       return { ...state, [action.field]: action.value };
@@ -439,7 +442,7 @@ const masterFormReducer = (state: State = defaultFormData, action: Action) => {
   }
 };
 
-const MasterFormContext = createContext<State | undefined>(undefined);
+const MasterFormContext = createContext<Encuesta | undefined>(undefined);
 const MasterFormDispatchContext = createContext<Dispatch | undefined>(
   undefined
 );
